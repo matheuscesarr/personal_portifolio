@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Portifólio - Matheus Cesar </title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#" class="desmarcarLink">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="desmarcarLink">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#projetos" class="desmarcarLink">Projetos</a>
+                            </li>
+
+                            <script>
+                                // Captura todos os links com a classe "desmarcarLink"
+                                const desmarcarLinks = document.querySelectorAll(".desmarcarLink");
+                        
+                                // Adiciona um event listener para cada link
+                                desmarcarLinks.forEach(link => {
+                                    link.addEventListener("click", function(event) {
+                                        
+                        
+                                        // Encontra o checkbox associado ao link clicado
+                                        const checkbox = document.getElementById("toggle");
+                        
+                                        // Verifica se o checkbox está marcado e, se estiver, desmarca-o
+                                        if (checkbox.checked) {
+                                            checkbox.checked = false;
+                                        }
+                                    });
+                                });
+                                
+                                
+                            </script>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1>Matheus Cesar</h1>
+        <h2>Fullstack Developer</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/matheuscesarr" target="_blank">Linkedin</a>
+            <a href="https://www.github.com/matheuscesarr" target="_blank">Github</a>
+        </div>
+    </header>
+    
+    <main class="container" id="projetos">
+        <div id="card-title"><h1>Projetos</h1></div>
+        <a href="https://www.zaharaspamassage.rf.gd/" target="_blank" style="text-decoration: none;">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Zahara Spa</h2>
+                    <p>Clique Para Ver!</p>
+                </div>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe quae ipsam necessitatibus 
+                fugiat omnis nesciunt est exercitationem nam libero asperiores voluptate ad, perspiciatis animi! Similique error velit sint dignissimos.
+            </div>
+        </div></a>
+        <a href="https://gymfitlandingpage.rf.gd/" target="_blank" style="text-decoration: none;">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Gym Page</h2>
+                    <p>Vem ver!</p>
+                </div>
+            </div></a>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe quae ipsam necessitatibus 
+                fugiat omnis nesciunt est exercitationem nam libero asperiores voluptate ad, perspiciatis animi! Similique error velit sint dignissimos.
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 3</h2>
+                    <p>Vem ver!</p>
+                </div>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe quae ipsam necessitatibus 
+                fugiat omnis nesciunt est exercitationem nam libero asperiores voluptate ad, perspiciatis animi! Similique error velit sint dignissimos.
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        rodapé
+    </footer>
+</body>
+</html>
